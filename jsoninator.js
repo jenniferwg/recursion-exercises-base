@@ -16,7 +16,7 @@ const stringify = function(obj) {
     start = '[';
     end = ']'
   } else if(_.isObject(obj)) {
-  	_.each(obj, (value, key) => {
+    _.each(obj, (value, key) => {
       result.push(stringify(key) + ':' + stringify(value));
     });
     start = '{';
