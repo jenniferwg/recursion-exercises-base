@@ -11,7 +11,7 @@ const getElementById = function(root, id) {
 const getElementsByClassName = function(root, className) {
   const rootArr = flattenTreeToArray(root);
   return _.filter(rootArr, currentEl => {
-  		return currentEl.className && (currentEl.className).indexOf(className) != -1;
+    return currentEl.className && (currentEl.className).indexOf(className) != -1;
   });
 };
 
